@@ -36,12 +36,13 @@
                 {
                     title = "Your message";
                 }
-                swal2({
+                swal({
                     title: title,
                     text: message,
                     imageUrl: "logo.png"
                 });
             });
+            
 
             $("#but4").click(function(){
                 var message = $("#message").val();
@@ -67,20 +68,20 @@
         <table>
             <tr>
                 <td>Title</td>
-                <td><input type="text" value="Title Text" id=" title" /></td>
+                <td><input type='text' value='Title text' id='title'></td>
             </tr>
             <tr>
                 <td>Message</td>
-                <td><input type="text" value="Your message" id="message" /></td>
+                <td><input type='text' value='Your message' id='message'></td>
             </tr>
             <tr>
-                <td colspan="2">
-                    <input type="button" value="Simple alert" id="but1" />
-                    <input type="button" value="Alert with title" id="but2" />
-                    <input type="button" value="Alert with image" id="but3" />
-                    <input type="button" value="With timer" id="but4" />
+                <td colspan='2'><input type='button' value='Simple alert' id='but1'>&nbsp;
+                <input type='button' value='Alert with title' id='but2'>&nbsp;
+                <input type='button' value='Alert with image' id='but3'>&nbsp;
+                <input type='button' value='With timer' id='but4'>
                 </td>
             </tr>
         </table>
+        
     </body>
 </html>
